@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Survey Form</title>
+        <meta name="description" content="Assignment- 2">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="fav.ico">
+    </head>
+    <body class="body">
+        <h1 class="heading">Survey Form</h1>
+        <form class="form">
+            <label style="font-size: larger;margin-left: 525px;"><b>Let us know how we can improve freeCodeCamp</b></label><br>
+            <hr>
+            <br>
+            <b>
+            <label class="required label" name="Name">Name </label>
+            <input class="topinputs name" type="text" placeholder="Enter your name" name="name" required><br><br>
+            <label class="required label" name="Name">Email </label>
+            <input class="topinputs email" type="text" placeholder="Enter your email" name="email" required><br><br>
+            <label class="required" style="margin-right: 5px;margin-left: 685px;" name="Name">Age </label>
+            <input class="topinputs age" type="number" placeholder="Age" name="age" required><br><br>
+
+            <label name="currentrole" style="margin-right: 5px;margin-left: 360px;" >Which option best describes your current role?</label>
+            <select style="margin-left: 5px;border-radius: 10px;padding: 5px;">
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Programmer">Programmer</option>
+                <option value="Other">Other</option>    
+            </select><br><br>
+
+            <label class="required" style="margin-right: 5px;margin-left: 405px;" name="recommend">How likely is that you would recommend</label>
+            <input type="radio" name="definitely">Definitely<br>
+            <label style="margin-right: 5px;margin-left: 523px;" name="recommend">freCodeCamp to a friend?</label>
+            <input type="radio" name="maybe">Maybe<br>
+            <input type="radio" style="margin-right: 5px;margin-left: 734px;" name="not sure">not sure<br><br>
+
+            <label style="margin-right: 5px;margin-left: 460px;" name="liking">What do you like the most in FCC:</label>
+            <select style="margin-left: 3px;border-radius: 10px;padding: 5px;">
+                <option value="">Select an option</option>
+                <option value="interface">Interface</option>
+                <option value="codes">codes</option>
+                <option value="explaination">Explaination</option>
+                <option value="other">Other</option>    
+            </select><br><br>
+
+            <label style="margin-right: 5px;margin-left:380px;" name="improvement">Things that should be improved in the future</label>
+            <input type="checkbox" style="margin-left: 5px;" name="definitely">Front-end Projects<br>
+            <label style="margin-right: 5px;margin-left:560px;" name="improvement">(Check all that apply)</label>
+            <input type="checkbox" name="maybe">Back-end Projects<br>
+            <input type="checkbox" style="margin-right: 5px;margin-left:734px;" name="not sure">Full stack projects<br><br>
+            </b>
+
+            <button name="submit-button" class="button" onclick="myFunction()"><b>Submit</b></button> 
+        </form>
+
+        <script src="submission.js"></script>
+    </body>
+</html>
